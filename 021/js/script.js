@@ -1,10 +1,4 @@
-let num = prompt("Digite um número")
+let horaInicio = parseInt(prompt("Digite a hora que a partida começou"))
+let horaFinal = parseInt(prompt("Digite a hora que a partida acabou"))
 
-num = parseInt(num)
-
-if (num < 0) {
-    alert("O número digitado é negativo")
-} else {
-    alert("O número digitado é positivo")
-}
 

@@ -1,8 +1,10 @@
-let salarioFixo = parseFloat(prompt("Digite o salario fixo mensal do funcionário"))
-let comissaoFixa = parseFloat(prompt("Digite o valor fixo da comissão"))
-let totalCarros = parseInt(prompt("Digite valor total de carros vendidos pelo funcionário"))
+let nota1 = parseInt(prompt("Digite a primeira nota"))
+let nota2 = parseInt(prompt("Digite a segunda nota"))
 
-let totalComissao = comissaoFixa * totalCarros
-let salarioFinal = totalComissao / 100 * 5 + totalComissao + salarioFixo
+let media = (nota1 + nota2) / 2
 
-alert("O salário total do funcionário vai ser "+salarioFinal)
+if (media > 5) {
+    alert("O aluno foi aprovado")
+} else {
+    alert("O aluno não foi aprovado")
+}

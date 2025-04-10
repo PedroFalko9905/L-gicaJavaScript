@@ -1,12 +1,11 @@
-let num = prompt("Digite um número")
+let val1 = prompt("Digite o primeiro valor")
+let val2 = prompt("Digite o segundo valor ")
 
-num = parseInt(num)
+val1 = parseInt(val1)
+val2 = parseInt(val2)
 
-if (num < 10) {
-    alert("O número digitado é menor que 10")
-} else
-    if (num == 10 ) {
-        alert("O número digitado é igual a 10")
-    } else{
-        alert("O número digitado é maior que 10")
-    }
+if (val1 > val2) {
+    alert(val2 +" "+val1)
+} else{
+    alert(val1 +" "+val2)
+}
