@@ -1,11 +1,15 @@
+let votosBrancos = prompt("Digite a quantidade de votos em branco: ")
+let votosNulos = prompt("Digite a quantidade de votos nulos: ")
+let votosValidos = prompt("Digite a quantidade de votos validos: ")
 
-let lado = prompt("Digite o valor de um lado do quadrado")
+votosBrancos = parseInt(votosBrancos)
+votosNulos = parseInt(votosNulos)
+votosValidos = parseInt(votosValidos)
 
-function calcular() {
-    let area = lado * lado
+let votosTotais = votosBrancos + votosNulos + votosValidos
 
-    alert("A área do quadrado é igual a " + area+"cm²")
-}
+let porceBrancos = votosBrancos / votosTotais * 100
+let porceNulos = votosNulos / votosTotais * 100
+let porceValidos = votosValidos / votosTotais * 100
 
-calcular()
-
+alert("O total de votos são "+ votosTotais+ " Sendo "+porceBrancos+"% em branco, "+ porceNulos+"% são nulos e "+porceValidos+ "% são validos" )

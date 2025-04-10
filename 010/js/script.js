@@ -1,13 +1,10 @@
+let valorFabrica = prompt("Digite o valor do carro apenas com o preço de fábrica: ")
 
-let raio = prompt("Digite o valor do raio do circulo: ")
+valorFabrica = parseInt(valorFabrica)
 
-raio = parseInt(raio)
+let valorDistribuidora = valorFabrica / 100 * 28
+let valorImposto = valorFabrica / 100 * 45
 
-function calcular() {
-    let area = 3.14 * (raio * raio)
+let valorTotal = valorFabrica + valorDistribuidora + valorImposto
 
-    alert("A área do circulo é igual a " + area+"cm²")
-}
-
-calcular()
-
+alert("O valor total como as taxas o carro ficará por "+ valorTotal)

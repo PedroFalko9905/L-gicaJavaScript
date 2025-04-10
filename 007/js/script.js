@@ -1,12 +1,16 @@
+let idadeAnos = prompt("Digite quantos anos voçê tem: ")
+let idadeMeses = prompt("Digite quantos meses tem desde o seu ultimo aniversário: ")
+let idadeDias = prompt("Digite quantos dias se passaram desde o seu ultimo mêsversário: ")
 
-let base = prompt("Digite o valor da base: ")
-let altura= prompt("Digite o valor da altura: ")
+idadeAnos = parseInt(idadeAnos)
+idadeMeses = parseInt(idadeMeses)
+idadeDias = parseInt(idadeDias)
 
-function calcular() {
-    let area = base * altura
+let diasAnos = idadeAnos * 365
+let diasMes = idadeMeses * 30
+let totalDias = diasAnos + diasMes + idadeDias
 
-    alert("A área do retangulo é igual a " + area+"cm²")
-}
+alert("Sua idade só em dias são "+ totalDias+ " Dias")
 
-calcular()
+
 

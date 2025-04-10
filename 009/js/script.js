@@ -1,15 +1,10 @@
+let salarioAntigo = prompt("Qual o valor do salário sem o reajuste? ")
+let porcentAumento = prompt("Quantos por cento o salário aumentou? ")
 
-let base = prompt("Digite o valor da base: ")
-let altura= prompt("Digite o valor da altura: ")
+salarioAntigo = parseFloat(salarioAntigo)
+porcentAumento = parseInt(porcentAumento)
 
-base = parseInt(base)
-altura = parseInt(altura)
+let aumento = salarioAntigo / 100 * porcentAumento
+let salarioAtual = salarioAntigo + aumento
 
-function calcular() {
-    let area = base * altura / 2
-
-    alert("A área do triangulo é igual a " + area+"cm²")
-}
-
-calcular()
-
+alert("O salário atual é "+salarioAtual)
